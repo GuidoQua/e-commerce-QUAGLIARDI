@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <!--Iconos-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+        <!-- Mi CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+
+    <title>E-commerce | JS</title>
+
+</head>
+<body>
+
+    <!--Inicia NavBar-->
+    <header class="sticky-top">
+        <nav class="navbar p-0 navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img class="imagen__logo" src="./img/logo.png" alt="Logo B-BallStyle">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-lg-0">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link botones-categorias" id="Calzado" href="#">Calzado</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link botones-categorias" id="Indumentaria" href="#">Indumentaria</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link botones-categorias" id="Accesorios" href="#">Accesorios</a>
+                        </li>
+
+                        <li class="nav-item nav__carrito">
+                            <a class="nav-link" href="#contenedor-carrito"><i class="bi bi-cart3"><span id="numero-carrito"></span></i></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Termina NavBar-->
+
+    <main>
+        <section class="d-flex justify-content-center">
+            <div class="contenedor-buscar">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 color__box" id="buscarProducto" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn__mio btn-outline" type="submit">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <h1 class="text-center pt-3 contenedor-titulos">Todos los Productos</h1> <!-- ESTE TÍTULO SE CARGA CON JS-->
+            <div id="contenedor-productos" class="container contenedor-productos">
+                <!-- ESTE DIV SE CARGA CON JS-->
+            </div>
+        </section>
+
+        <section class="d-flex justify-content-center">
+            <div class="container__carrito">
+                <h2 class="titulo__carrito">Carrito de Compras <i class="bi bi-cart3"></i></h2>
+                <div  class="" id="contenedor-carrito">
+                    <!--CARGO EL CARRITO CON JS-->
+                </div>
+                <div id="total-carrito"></div>
+            </div>
+        </section>
+
+        <section class="d-flex justify-content-center">
+            <div class="st__vaciar" id="contenedor-vaciar">
+
+            </div>
+        </section>
+
+    </main>
+    
+    <!--Bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!--JavaScrip-->
+    <script src="./js/main.js"></script>
+</body>
+</html>
